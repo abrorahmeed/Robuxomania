@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="terms-style.css">
+</head>
+<body>
+    <div class="hamburger" onclick="toggleSidebar()">
+        &#9776;
+    </div>
+    <div class="sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="earn.html">Earn</a></li>
+            <li><a href="redeem.html">Redeem</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="answers.html">FAQ</a></li>
+        </ul>
+    </div>
+    <div class="overlay" onclick="closeSidebar()"></div>
+
+    <div class="content">
+        <h1 class="page-header">Terms</h1>
+        <h3>Terms&Conditions</h3>
+        <div class="container">
+            <h2>Terms&Conditions</h2>
+            <h3>Please, read until the end</h3>
+            <p>These Terms and Conditions govern your use of our website and services. By accessing or using this site, you agree to comply with these Terms. If you don't agree, please, do not use our platform.</p>
+            <h4>General Terms</h4>
+            <p>1.1 These terms apply to all users of Robuxomania</p>
+            <p>1.2 We reserve the right to modify or update these Terms at any time, and continued use of our services constitutes acceptance of any changes.</p>
+            <p>1.3 Any violation of these Terms may result termination of user balance</p>
+            <h4>Earning and Rewards</h4>
+            <p>2.1 Users can earn points by completing designated tasks, such as visiting websites, watching advertisements, or participating in surveys.</p>
+            <p>2.2 We reserve the right to adjust, revoke, or withhold rewards in cases of suspected fraud, abuse, or system manipulation.</p>
+            <p>2.3 Points may be redeemed for rewards, including but not limited to cash, gift cards, or cryptocurrency, subject to availability.</p>
+            <h4>Payment and Withdrawals</h4>
+            <p>3.1 Minimum withdrawal thresholds and processing times may vary and are subject to change.</p>
+            <p>3.2 We are not liable for transaction delays caused by third-party payment providers.</p>
+            <p>3.3 Any attempt to manipulate the withdrawal system may result in balance reduction.</p>
+            <h4>Prohibited Activities</h4>
+            <p>4.1 Users must not engage in:
+                The use of automated scripts, bots, or VPNs to manipulate the platform.
+                Creation of multiple accounts to gain an unfair advantage.
+                Fraudulent activities, including misleading referrals or false task completions.
+                Any activity that violates applicable laws or regulations.</p>
+            <p>4.2 Violation of this section may result in immediate account termination and forfeiture of any accumulated rewards.</p>
+            <h4>Limitation of Liability</h4>
+            <p>5.1 We do not guarantee any specific level of earnings. Participation in tasks is at the user's own discretion.</p>
+            <p>5.2 We are not responsible for losses incurred due to reliance on earnings from our platform.</p>
+            <p>5.3 Users are solely responsible for any tax obligations associated with their earnings.</p>
+            <h4>Amendments to These Terms</h4>
+            <p>6.1 We reserve the right to update these Terms at any time. Users will be notified of significant changes.</p>
+            <p>6.2 Continued use of the platform after modifications indicates acceptance of the revised Terms.</p>
+            <h4>Contact Information</h4>
+            <p>For any inquiries regarding these Terms, please contact us at abrorahmeed@gmail.com.
+                By using Robuxomania, you acknowledge that you have read and agreed to these Terms and Conditions.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <a href="about.html">
+            <h4>Ahmed groups</h4>
+        </a>
+        <p>2025</p>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            const overlay = document.querySelector('.overlay');
+        if (sidebar.style.left === '0px') {
+            sidebar.style.left = '-250px';
+            overlay.style.display = 'none';
+        } else {
+            sidebar.style.left = '0px';
+            overlay.style.display = 'block';
+        }
+        }
+
+        function closeSidebar() {
+        const sidebar = document.querySelector('.sidebar');
+        const overlay = document.querySelector('.overlay');
+        sidebar.style.left = '-250px';
+        overlay.style.display = 'none';
+        }
+    </script>
+</body>
+</html>

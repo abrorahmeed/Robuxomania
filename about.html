@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="answers-style.css">
+</head>
+<body>
+    <div class="hamburger" onclick="toggleSidebar()">
+        &#9776;
+    </div>
+    <div class="sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="earn.html">Earn</a></li>
+            <li><a href="redeem.html">Redeem</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="answers.html">FAQ</a></li>
+        </ul>
+    </div>
+    <div class="overlay" onclick="closeSidebar()"></div>
+    
+    <div class="content">
+        <h1 class="page-header">About Us</h1>
+        <h3>Turning Playtime to Paytime</h2>
+        <h3>Welcome to Robuxomania</h3>
+        <div class="container">
+            <h2>Who we are?</h2>
+            <p>Welcome to Robuxomania where you can earn rewards by completing simple online tasks! It can be visiting sites, watching videos or filling out surveys. We make sure your time online turns into real value!</p>
+        </div>
+        <div class="container">
+            <h2>Our Mission</h2>
+            <p>We believe that everyone should be rewarded for their time and effort online. Our platform connects users with brands and advertisers who are willing to pay for engagement, making it easy for you to earn points and redeem them for gift cards or crypto.</p>
+        </div>
+        <div class="container">
+            <h2>Why Choose Robuxomania</h2>
+            <p>- Fast&Easy Earnings</p>
+            <p>- Multiple Reward Options</p>
+            <p>- Trusted by hundreds</p>
+        </div>
+        <div class="container">
+            <h2>Stay Safe - Be Cautious</h2>
+            <p>Never share your Account details with anyone, Be aware of fake websites and messages pretending to be us. Stay alert and Report any suspicious activity to our Support team.</p>
+            <p>abrorahmeed@gmail.com</p>
+        </div>
+        <div class="container">
+            <h2>Terms&Conditions</h2>
+            <a href="terms.html">
+                <button>See Full Page</button>
+            </a>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <a href="about.html">
+            <h4>Ahmed groups</h4>
+        </a>
+        <p>2025</p>
+    </div>
+    
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            const overlay = document.querySelector('.overlay');
+        if (sidebar.style.left === '0px') {
+            sidebar.style.left = '-250px';
+            overlay.style.display = 'none';
+        } else {
+            sidebar.style.left = '0px';
+            overlay.style.display = 'block';
+        }
+        }
+
+        function closeSidebar() {
+        const sidebar = document.querySelector('.sidebar');
+        const overlay = document.querySelector('.overlay');
+        sidebar.style.left = '-250px';
+        overlay.style.display = 'none';
+        }
+    </script>
+</body>
+</html>

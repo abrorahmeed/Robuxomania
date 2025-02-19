@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earn Tasks</title>
+    <link rel="stylesheet" href="earn-styles.css">
+</head>
+<body>
+    <div class="hamburger" onclick="toggleSidebar()">
+        &#9776;
+    </div>
+    <div class="sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="earn.html">Earn</a></li>
+            <li><a href="redeem.html">Redeem</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="answers.html">FAQ</a></li>
+        </ul>
+    </div>
+    <div class="overlay" onclick="closeSidebar()"></div>
+
+    <div class="content">
+        <h1 class="page-header">Available Tasks</h1>
+        <p class="page-p">Your current balance: <span id="balance">0</span> points</p>
+
+        <!-- Task buttons container -->
+        <h2 class="h2-tasks">Visit Sites&Blogs</h2>
+        <p class="p-tasks">10 points</p>
+        <div class="task-buttons-container">
+            <a class="a-btn" href="https://www.trustpilot.com/review/shrinkearn.com?stars=5">
+                <button class="task-button" data-points="10">Visit Site 1</button>
+            </a>
+            <a class="a-btn" href="https://www.trustpilot.com/review/clicksfly.com">
+                <button class="task-button" data-points="10">Visit Site 2</button>
+            </a>
+            <a class="a-btn" href="https://www.trustpilot.com/review/shrinkearn.com?stars=5">
+                <button class="task-button" data-points="10">Visit Site 1</button>
+            </a>
+            <a class="a-btn" href="https://www.trustpilot.com/review/clicksfly.com">
+                <button class="task-button" data-points="10">Visit Site 2</button>
+            </a>
+            <a class="a-btn" href="https://www.trustpilot.com/review/shrinkearn.com?stars=5">
+                <button class="task-button" data-points="10">Visit Site 1</button>
+            </a>
+            <a class="a-btn" href="https://www.trustpilot.com/review/clicksfly.com">
+                <button class="task-button" data-points="10">Visit Site 2</button>
+            </a>
+        </div>
+
+        <h2 class="h2-tasks">Survays&Polls</h2>
+        <p class="p-tasks">30 points</p>
+        <div class="task-buttons-container">
+            <a class="a-btn" href="https://www.trustpilot.com/review/shrinkearn.com?stars=5">
+                <button class="task-button" data-points="30">Survay 1</button>
+            </a>
+            <a class="a-btn" href="https://www.trustpilot.com/review/clicksfly.com">
+                <button class="task-button" data-points="30">Survay 2</button>
+            </a>
+            <a class="a-btn" href="https://www.trustpilot.com/review/shrinkearn.com?stars=5">
+                <button class="task-button" data-points="30">Survay 1</button>
+            </a>
+            <a class="a-btn" href="https://www.trustpilot.com/review/clicksfly.com">
+                <button class="task-button" data-points="30">Survay 2</button>
+            </a>
+        </div>
+
+        <div class="container">
+            <h2 class="rule-h2">WARNING</h2>
+            <p class="rule-p">Please, consider accomplishing the task you are given until the end or your withdrawal request will be rejected by our admins</p>
+        </div>
+    </div>
+    <div class="footer">
+        <a href="about.html">
+            <h4>Ahmed groups</h4>
+        </a>
+        <p>2025</p>
+    </div>
+
+    <script src="earn-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="answers-style.css">
+</head>
+<body>
+    <div class="hamburger" onclick="toggleSidebar()">
+        &#9776;
+    </div>
+    <div class="sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="earn.html">Earn</a></li>
+            <li><a href="redeem.html">Redeem</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="answers.html">FAQ</a></li>
+        </ul>
+    </div>
+    <div class="overlay" onclick="closeSidebar()"></div>
+
+    <div class="content">
+        <h1 class="page-header">Frequently Asked Questions</h1>
+        <h3>Here you can find answers for your common questions</h2>
+        <div class="container">
+            <h2>How to start earning?</h2>
+            <p>Go to "Earn" page and do simple tasks so that you can get points and redeem them for donations, crypto, gift-cards and etc.</p>
+        </div>
+        <div class="container">
+            <h2>How to Redeem points?</h2>
+            <p>You can redeem points to rewards in "Redeem" page, which is really simple process and takes only few minutes to send withdrawal request.</p>
+        </div>
+        <div class="container">
+            <h2>How long does it take?</h2>
+            <p>After you will have sent request for redeeming process, we will contact you within 7 days.</p>
+        </div>
+        <div class="container">
+            <h2>How to contact us?</h2>
+            <p>You can send us email:</p>
+            <p>abrorahmeed@gmail.com</p>
+            <p>Telegram: @abrorahmeed</p>
+        </div>
+    </div>
+    <div class="footer">
+        <a href="about.html">
+            <h4>Ahmed groups</h4>
+        </a>
+        <p>2025</p>
+    </div>
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            const overlay = document.querySelector('.overlay');
+            if (sidebar.style.left === '0px') {
+                sidebar.style.left = '-250px';
+                overlay.style.display = 'none';
+            } else {
+                sidebar.style.left = '0px';
+                overlay.style.display = 'block';
+                }
+            }
+
+            function closeSidebar() {
+                const sidebar = document.querySelector('.sidebar');
+                const overlay = document.querySelector('.overlay');
+                sidebar.style.left = '-250px';
+                overlay.style.display = 'none';
+            }
+    </script>
+</body>
+</html>
